@@ -4,6 +4,7 @@ pipeline {
         stage('Test Maven') { 
             steps { 
                echo 'This pipeline was triggered due to github webhooks.' 
+               echo 'The webhook trigger option was added'
                sh 'mvn clean test'
                   }
                            }
