@@ -3,7 +3,7 @@ pipeline {
     stages { 
         stage('Test Maven') { 
             steps { 
-               echo 'This is a minimal pipeline.' 
+               echo 'This pipeline was triggered due to github webhooks.' 
                sh 'mvn clean test'
                   }
                            }
