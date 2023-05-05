@@ -1,0 +1,16 @@
+pipeline { 
+    agent any  
+    stages { 
+        stage('Test Maven') { 
+            steps { 
+               echo 'This is a minimal pipeline.' 
+               sh 'mvn clean test'
+            }
+        stage('Build Maven') { 
+            steps { 
+               echo 'This is a minimal pipeline.' 
+               sh 'mvn clean package'
+            }    
+        }
+    }
+}
